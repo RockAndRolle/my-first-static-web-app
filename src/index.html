@@ -21,8 +21,8 @@
     }())
 
     (async function() {
-        const { text } = await( await fetch(`/api/test`)).json();
-        document.querySelector('#header').textContent = text;
+        const test = await( await fetch(`/api/test`)).json();
+        document.querySelector('#header').textContent = test;
     }())
 
     </script> 
