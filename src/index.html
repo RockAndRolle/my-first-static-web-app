@@ -16,15 +16,14 @@
 
     <script>
     (async function() {
+
         const { text } = await( await fetch(`/api/message`)).json();
         document.querySelector('#name').textContent = text;
-    }())
 
-    (async function() {
-        const {header} = await( await fetch(`/api/test`)).json();
+        const { header } = await( await fetch(`/api/test`)).json();
         document.querySelector('#header').textContent = header;
-    }())
 
+    }())
     </script> 
 </body>
 
